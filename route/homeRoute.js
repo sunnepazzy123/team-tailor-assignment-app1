@@ -1,6 +1,7 @@
 const express = require("express")
 const router = express.Router()
 const User = require("../Models/Users.js")
+const mockUser = require("../userMock.js")
 
 
 
@@ -33,6 +34,8 @@ router.get("/about", async(req, res)=>{
 router.get("/docs", async(req, res)=>{
     res.render("home/docs")
 })
+
+
 
 
 
